@@ -40,3 +40,8 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 ```
 
 # Features
+
+- React
+- React RouterV6
+- React Hooks
+- PropTypes
