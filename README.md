@@ -6,9 +6,9 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 
 ```bash
 ├── README.md
-├── _redirects
 ├── package.json
 ├── public
+│   └── _redirects
 ├── src
 │   ├── components
 │   │   ├── Comment
@@ -16,14 +16,21 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 │   │   ├── Loading
 │   │   │   └── index.js
 │   │   ├── Nav
+│   │   │   ├── components
+│   │   │   │   ├── NavHeader
+│   │   │   │   │   └── index.js
+│   │   │   │   └── ThemeButton
+│   │   │   │       └── index.js
 │   │   │   └── index.js
 │   │   ├── Post
-│   │   │   └── index.js
-│   │   ├── PostList
 │   │   │   └── index.js
 │   │   ├── PostMetaInfo
 │   │   │   └── index.js
 │   │   ├── PostTitle
+│   │   │   └── index.js
+│   │   ├── Posts
+│   │   │   └── index.js
+│   │   ├── PostsList
 │   │   │   └── index.js
 │   │   └── User
 │   │       └── index.js
@@ -45,3 +52,7 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 - React RouterV6
 - React Hooks
 - PropTypes
+
+### Todo
+
+- Link out in new tab.
