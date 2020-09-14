@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { truncate } from "../../utils/helpers";
 
 export default function PostTitle({ title, link }) {
-  function truncate(str, n) {
-    return str.length > n ? str.substr(0, n - 1) + " 🔗" : str;
-  }
-
   return (
     <div className="post-title">
       <a className="link" href={link}>
