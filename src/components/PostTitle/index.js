@@ -9,7 +9,7 @@ export default function PostTitle({ title, link }) {
         {title}
       </a>
       <a className="small-link" href={link}>
-        {link ? `(${truncateURL(link, 20)})` : null}
+        {link ? `(${truncateURL(link, "🔗")})` : null}
       </a>
     </div>
   );

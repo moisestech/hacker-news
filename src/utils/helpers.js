@@ -8,3 +8,9 @@ export function formatDate(timestamp) {
 export function truncate(str, n) {
   return str.length > n ? str.substr(0, n - 1) + " 🔗" : str;
 }
+
+export function truncateURL(url, replaceString) {
+  return (url = url
+    .replace(/^(?:https?:\/\/)?(?:www\.)?/i, " " + replaceString)
+    .split("/")[0]);
+}
