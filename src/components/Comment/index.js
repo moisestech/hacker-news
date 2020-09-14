@@ -1,21 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import PostMetaInfo from "../PostMetaInfo";
+import { formatDate } from "../../utils/helpers";
 
-export default function Comment({ comment }) {
+export default function Comment({ by, id, text, user, time }) {
   return (
     <div className="comment">
-      <PostMetaInfo
-        comment={true}
-        by={comment.by}
-        time={comment.time}
-        id={comment.id}
-      />
-      <p dangerouslySetInnerHTML={{ __html: comment.text }} />
+      <div className="comment-user">
+        <Link
+          to={{ pathname: "/user", search: `?userId=${user}` }}
+          className="user-link"
+        >
+          <h2>{user}</h2>
+        </Link>
+        <PostMetaInfo comment={true} by={by} time={time} id={id} />
+        <p dangerouslySetInnerHTML={{ __html: text }} />
+      </div>
     </div>
   );
 }
 
-Comment.propTypes = {
-  comment: PropTypes.object.isRequired,
-};
+Comment.propTypes = {};
