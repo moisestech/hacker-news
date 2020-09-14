@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { truncate } from "../../utils/helpers";
+import { truncateURL } from "../../utils/helpers";
 
 export default function PostTitle({ title, link }) {
   return (
@@ -9,7 +9,7 @@ export default function PostTitle({ title, link }) {
         {title}
       </a>
       <a className="small-link" href={link}>
-        {link ? `(${truncate(link, 20)})` : null}
+        {link ? `(${truncateURL(link, 20)})` : null}
       </a>
     </div>
   );
