@@ -33,6 +33,11 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 │   │   ├── PostsList
 │   │   │   └── index.js
 │   │   └── User
+│   │       ├── components
+│   │       │   ├── UserAbout
+│   │       │   │   └── index.js
+│   │       │   └── UserPosts
+│   │       │       └── index.js
 │   │       └── index.js
 │   ├── contexts
 │   │   └── theme.js
@@ -56,3 +61,4 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 ### Todo
 
 - Link out in new tab.
+- Create generative profile image for user.
