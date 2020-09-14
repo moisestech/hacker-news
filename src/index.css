@@ -36,9 +36,21 @@ body {
   font-family: verdana;
 }
 
+body #root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .container.loading {
@@ -46,6 +58,8 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  font-weight: bold;
 }
 
 .container .row.space-between {
@@ -273,6 +287,8 @@ body {
   color: #828282;
 }
 
+/* COMMENT */
+
 .comment {
   padding: 10px;
   margin: 5px;
@@ -289,13 +305,28 @@ body {
   font-size: 7pt;
 }
 
-.user-container {
+/* USER */
+
+.container .user {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* USER ABOUT */
+
+.user-about {
   margin-top: 2em;
   padding-left: 1em;
 }
 
-.user-container p {
+.user-about p {
   margin-top: 10px;
+}
+
+.user-about .date,
+.user-about .karma {
+  color: gray;
 }
 
 .user-link {
@@ -307,10 +338,19 @@ body {
   text-decoration: underline;
 }
 
-.userPosts {
-  padding-left: 1em;
+.user-posts {
+  padding: 2em 1em 1em 1em;
 }
 
-.userPosts li {
+.user-posts li {
   padding-top: 1em;
+}
+
+/* 404 */
+
+h1.four-oh-four {
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
