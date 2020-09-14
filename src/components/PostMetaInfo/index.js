@@ -7,21 +7,28 @@ export default function PostMetaInfo({ by, score, descendants, time, id }) {
   return (
     <>
       <div className="meta-info-light">
-        <span class="subtext">
+        <span className="subtext">
           {score} points by{" "}
-          <Link
-            to={{ pathname: "/user", search: `?userId=${by}` }}
-            className="user-link"
-          >
-            {by}
-          </Link>{" "}
-          on {formatDate(time)}{" "}
-          <Link
-            to={{ path: "/post", seearch: `?id=${id}` }}
-            className="post-link"
-          >
-            {descendants} comments
-          </Link>
+          <span>
+            <Link
+              to={{ pathname: "/user", search: `userId=${by}` }}
+              className="user-link"
+            >
+              {by}
+            </Link>
+          </span>
+          <span> on {formatDate(time)} </span>
+          {typeof descendants === "number" && (
+            <span>
+              with{" "}
+              <Link
+                to={{ pathname: "/post", search: `postId=${id}` }}
+                className="post-link"
+              >
+                {descendants} comments
+              </Link>
+            </span>
+          )}
         </span>
       </div>
     </>
@@ -29,9 +36,9 @@ export default function PostMetaInfo({ by, score, descendants, time, id }) {
 }
 
 PostMetaInfo.propTypes = {
-  by: PropTypes.string.isRequired,
-  score: PropTypes.number.isRequired,
-  descendants: PropTypes.number.isRequired,
+  by: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  score: PropTypes.number,
+  descendants: PropTypes.number,
   time: PropTypes.number.isRequired,
   url: PropTypes.string,
 };
