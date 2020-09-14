@@ -11,7 +11,7 @@ export default function PostsList({ posts }) {
 
         return (
           <li key={id} className="post">
-            <span class="rank">{index + 1}.▲</span>
+            <span className="rank">{index + 1}.▲</span>
             <span>
               <PostTitle title={title} link={url} />
               <PostMetaInfo
