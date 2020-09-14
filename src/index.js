@@ -51,7 +51,7 @@ function App() {
               </Route>
 
               <Route path="*">
-                <h1>Four oh Four</h1>
+                <h1 className="four-oh-four">Four oh Four</h1>
               </Route>
             </Switch>
           </Suspense>
