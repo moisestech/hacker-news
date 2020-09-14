@@ -21,4 +21,10 @@ export default function Comment({ by, id, text, user, time }) {
   );
 }
 
-Comment.propTypes = {};
+Comment.propTypes = {
+  by: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
+  time: PropTypes.number.isRequired,
+};
