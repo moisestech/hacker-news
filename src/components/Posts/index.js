@@ -5,21 +5,23 @@ import Loading from "../Loading";
 import PostsList from "../PostsList";
 
 function postsReducer(state, action) {
-  if (action.type === "fetch") {
+  const { type } = action;
+
+  if (type === "fetch") {
     return {
       ...state,
       posts: null,
       loading: true,
       error: null,
     };
-  } else if (action.type === "success") {
+  } else if (type === "success") {
     return {
       ...state,
       posts: action.posts,
       loading: false,
       error: null,
     };
-  } else if (action.type === "error") {
+  } else if (type === "error") {
     return {
       ...state,
       posts: null,
@@ -27,7 +29,7 @@ function postsReducer(state, action) {
       error: action.message,
     };
   } else {
-    throw new Error(`Action type: ${action.type} isn't supported.`);
+    throw new Error(`Action type: ${type} isn't supported.`);
   }
 }
 
@@ -39,7 +41,7 @@ export default function Posts({ type }) {
     error: false,
   });
 
-  // useEffect, dispatch fetch useReducer based on fetch
+  // useEffect, dispatch useReducer type:"fetch"MainPosts
   useEffect(() => {
     dispatch({ type: "fetch" });
 
