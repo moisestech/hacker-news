@@ -62,3 +62,4 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 
 - Link out in new tab.
 - Create generative profile image for user.
+- User has 0 post, "User has no Posts"
