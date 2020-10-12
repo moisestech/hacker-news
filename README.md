@@ -1,6 +1,6 @@
 # Hacker News Clone
 
-<img src="https://raw.githubusercontent.com/moisestech/hacker-news/master/public/assets/hacker-news-clone-logo.png" width="250px" />
+<img src="https://raw.githubusercontent.com/moisestech/hacker-news/master/public/assets/hacker-news-clone-logo.png" width="150px" />
 Hacker News API clone for reading post, linking to articles and connecting with users.
 
 ## ⚙ Features
@@ -90,4 +90,3 @@ Hacker News API clone for reading post, linking to articles and connecting with 
 - User has 0 post, "User has no Posts"
 - Home page click button
 - Add Favicon
-- Light / Dark Mode Theme
