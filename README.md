@@ -22,10 +22,11 @@ Hacker News API clone for reading post, linking to articles and connecting with 
 # 🗺 URL Tree
 
 ```bash
-├── /           #Home
-├── /posts      #Post
-├── /user       #User
-└── /*          #404
+├── /               #Home
+├── /posts          #Post
+├── /posts/:postId  #Post:ID
+├── /users          #User
+└── /*              #404
 ```
 
 # 🌿 Application Tree
