@@ -1,12 +1,34 @@
 # hacker-news
 
-Hacker News clone build with React 17, Hooks, ES8, RouterV6, Light/Dark Mode Theme
+<img src="hacker-news-clone-logo.png" width="250px" />
+Hacker News API clone for reading post, linking to articles and connecting with users.
 
-## Preview
+## ⚙ Features
 
-Coming Soon
+- React 17
+- React RouterV6
+- React Hooks
+- ES8
+- RouterV6
+- PropTypes
+- Light/Dark Theme
 
-# Application Tree
+## 👁️‍🗨️ Project Preview
+
+|                                                                                                                                                         Light Mode                                                                                                                                                         |                                                                                                                                                         Dark Mode                                                                                                                                                          |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![](https://user-images.githubusercontent.com/2933430/55542659-c0b0e100-5684-11e9-9877-20f218c8fde5.png) ![](https://user-images.githubusercontent.com/2933430/55542657-c0184a80-5684-11e9-9473-8a153a232301.png) ![](https://user-images.githubusercontent.com/2933430/55542656-c0184a80-5684-11e9-923b-2836944a474a.png) | ![](https://user-images.githubusercontent.com/2933430/55542654-c0184a80-5684-11e9-9436-9b3ae973e8b5.png) ![](https://user-images.githubusercontent.com/2933430/55542658-c0b0e100-5684-11e9-821f-03dc5f80c97c.png) ![](https://user-images.githubusercontent.com/2933430/55542655-c0184a80-5684-11e9-832b-657b683d0625.png) |
+
+# 🗺 URL Tree
+
+```bash
+├── /           #Home
+├── /posts      #Post
+├── /user       #User
+└── /*          #404
+```
+
+# 🌿 Application Tree
 
 ```bash
 ├── README.md
@@ -55,17 +77,11 @@ Coming Soon
 └── webpack.config.js
 ```
 
-## URL Tree
+## ⛰️ Roadmap
 
-## Features
+## 📝 Todos
 
-- React
-- React RouterV6
-- React Hooks
-- PropTypes
-
-## Todos
-
+- Create Pages Folder and restructure
 - Link out in new tab.
 - Create generative profile image for user.
 - User has 0 post, "User has no Posts"
