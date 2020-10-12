@@ -1,6 +1,10 @@
 # hacker-news
 
-Hacker News clone build with React, Hooks, ES8, RouterV6
+Hacker News clone build with React 17, Hooks, ES8, RouterV6, Light/Dark Mode Theme
+
+## Preview
+
+Coming Soon
 
 # Application Tree
 
@@ -51,16 +55,20 @@ Hacker News clone build with React, Hooks, ES8, RouterV6
 └── webpack.config.js
 ```
 
-# Features
+## URL Tree
+
+## Features
 
 - React
 - React RouterV6
 - React Hooks
 - PropTypes
 
-### Todo
+## Todos
 
 - Link out in new tab.
 - Create generative profile image for user.
 - User has 0 post, "User has no Posts"
 - Home page click button
+- Add Favicon
+- Light / Dark Mode Theme
