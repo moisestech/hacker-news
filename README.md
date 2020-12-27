@@ -1,6 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/823d6a19-057e-4684-a03e-3a545f3bebf9/deploy-status)](https://app.netlify.com/sites/hacker-news-react-hooks/deploys)
+
 # Hacker News Clone
 
 <img src="https://raw.githubusercontent.com/moisestech/hacker-news/master/public/assets/hacker-news-clone-logo.png" width="150px" />
+
 Hacker News API clone for reading post, linking to articles and connecting with users.
 
 ## ⚙ Features
@@ -34,10 +37,10 @@ Hacker News API clone for reading post, linking to articles and connecting with 
 ```bash
 ├── README.md
 ├── package.json
-├── public
+├── 📁 public
 │   └── _redirects
 ├── src
-│   ├── components
+│   ├── 📁 components
 │   │   ├── Comment
 │   │   │   └── index.js
 │   │   ├── Loading
@@ -90,3 +93,5 @@ Hacker News API clone for reading post, linking to articles and connecting with 
 - User has 0 post, "User has no Posts"
 - Home page click button
 - Add Favicon
+- Add Netlify Badge
+- Add URL Links to different Endpoints
